@@ -1,16 +1,16 @@
 
 #overview{
-    height: 600px;
-    width: 100%;
-  /*  background-image: url(./image/bg-image.jpg);*/
-   /* background-repeat:no-repeat ;*/
-   /* background-position: left 10% bottom 20%;*/
-   /* background-size: cover;*/
-   /* padding: 10px;*/
-    background: 
-    linear-gradient(to top , rgba (0,0,0,0.6) transparent),
-    url('./image/bg-image.jpg') center/cover no repeat,
-    #90caf9
+    height: 70vh;
+    width: 100vw;
+    background: linear-gradient(to right, #ef8e38, #108dc7);
+    /*  background-image: url(./image/bg-image.jpg);*/
+    /* background-repeat:no-repeat ;*/
+    /* background-position: left 10% bottom 20%;*/
+    /* background-size: cover;*/
+    /* padding: 10px;*/
+    /* background-image:linear-gradient(to top,rgb(77, 166, 255) ,transparent);/*
+    /* url('./image/bg-image.jpg') center/cover no repeat,
+    #90caf9*/
     /*background-attachment: fixed;*/
 
 }
@@ -25,46 +25,46 @@
 }
 .plan {
     width:25%;
-    padding: 8px;
-    margin: 18px ;
+    padding: 0.5rem;
+    margin: 1.3rem ;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
     color: #424242;
-    box-shadow:0 0 25px 5px rgba(0 , 0 ,34 ,0.07) ;
+    box-shadow:0 0 1.4rem 0.3rem rgba(0 , 0 ,34 ,0.07) ;
 }
-.plan__highligted {
+.plan__highlighted {
     background: #e3f2fd;
     color: #1565c0;
 
 }
 .plan__title__highlighted {
 background: white;
-    padding: 8px;
+    padding: 0.5rem;
     border-radius: 3px;
 }
 
 .plan__features {
     list-style: none;
     padding: 0;
-    margin: 8px 0;
+    margin: 0.5rem 0;
 }
 .plan__btn {
 background: #1565c0;
     color: white;
     font: inherit;
     border: none;
-    padding: 4px 16px ;
+    padding: 0.2rem 1rem ;
     border-radius: 3px;
     font-weight: bold;
 }
 #features {
     background: white;
-    margin-top: 80px;
-    padding: 16px;
+    margin-top: 4.8rem;
+    padding: 1rem;
 }
 #features  .section-title {
-    margin: 32px;
+    margin: 2rem;
 }
 .features__list {
     list-style: none;
@@ -89,5 +89,34 @@ background: #1565c0;
     border: 1px solid #42a5f5;
     border-radius: 50%;
     margin: auto;
+
+}
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: white;
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px  rgba(0, 0, 0, 0.5);
+
+}
+.modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.modal__action {
+    border: 1px solid #1565c0;
+    background: #1565c0;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+}
+.modal__action--negative {
+    background: #d81b60;
+    border: 1px solid #d81b60;
 
 }

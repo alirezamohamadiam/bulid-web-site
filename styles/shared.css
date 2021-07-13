@@ -13,7 +13,7 @@
 .main-header{
     width: 100%;
     background-color:#6fb9ff;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -32,7 +32,7 @@
 {
     color: #f1f9ff;
     text-decoration:none ;
-    font-size: 22px;
+    font-size: 1.3rem;
     vertical-align: middle;
 }
 
@@ -53,7 +53,7 @@ body{
 }
 .main-nav__item{
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 .main-nav__item a {
 
@@ -64,7 +64,7 @@ body{
 {
     background: #e3f2fd;
     color: #1565c0;
-    padding: 8px 16px ;
+    padding: 00.5rem 1rem ;
     border-radius: 8px;
 }
 .main-nav__item__account a:hover,
@@ -73,7 +73,7 @@ body{
 }
 .main__footer {
     background: #424242;
-    padding: 32px;
+    padding: 2rem;
 
 }
 .main--footer__links {
@@ -85,10 +85,10 @@ body{
 }
 .main--footer__link{
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 
 }
-.main--footer__link a {
+.main--footer__link a { 
     color: #f5f5f5;
     text-decoration: none;
 
@@ -97,5 +97,16 @@ body{
 .main--footer__link a:hover ,
 .main--footer__link a:active {
     color: #e0e0e0;
+
+}
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0 , 0 , 0.5);
 
 }
