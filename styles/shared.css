@@ -3,6 +3,12 @@
 }
 
 
+body{
+    margin: 0;
+    font-family: 'Vazir-FD';
+
+}
+
 
 @font-face {
     src: url(../font/Vazir-FD.woff);
@@ -18,15 +24,22 @@
     top: 0;
     left: 0;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
+.main-nav{
+    display: flex;
 
+} 
 
 .main-nav__item{
     padding: 0;
     margin: 0;
     list-style: none;
+    display: flex;
 }
 .main-header__logo
 {
@@ -36,24 +49,10 @@
     vertical-align: middle;
 }
 
-.main-nav{
-    display: inline-block;
-    width: calc(100% - 70px);
-    text-align: right;
 
-}
-body{
-    margin: 0;
-    font-family: 'Vazir-FD';
-
-}
-.main-header >div {
-    display: inline-block;
-    vertical-align: middle;
-}
 .main-nav__item{
-    display: inline-block;
     margin: 0 1rem;
+    display: flex;
 }
 .main-nav__item a {
 
@@ -80,11 +79,11 @@ body{
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 
 }
 .main--footer__link{
-    display: inline-block;
     margin: 0 1rem;
 
 }
