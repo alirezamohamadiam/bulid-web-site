@@ -6,9 +6,19 @@
 body{
     margin: 0;
     font-family: 'Vazir-FD';
+    display: grid;
+    grid-template-rows: 2rem auto auto;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+
 
 }
-
+main {
+    /* grid-row: 2/3; */
+    grid-area: main;
+}
 
 @font-face {
     src: url(../font/Vazir-FD.woff);
@@ -27,14 +37,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    grid-area: header;
 }
 
 
 .main-nav{
     display: flex;
 
-} 
-
+}
+.right-nav{
+    display: flex;
+}
 .main-nav__item{
     padding: 0;
     margin: 0;
@@ -73,6 +86,8 @@ body{
 .main__footer {
     background: #424242;
     padding: 2rem;
+    /* grid-row: 3/4 ; */
+    grid-area: footer;
 
 }
 .main--footer__links {
