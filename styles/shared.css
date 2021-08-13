@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +8,7 @@ body{
     margin: 0;
     font-family: 'Vazir-FD';
     display: grid;
-    grid-template-rows: 2rem auto auto;
+    grid-template-rows: 3rem auto auto;
     grid-template-areas:
     'header'
     'main'
@@ -43,6 +44,7 @@ main {
 
 .main-nav{
     display: flex;
+    
 
 }
 .right-nav{
@@ -60,15 +62,19 @@ main {
     text-decoration:none ;
     font-size: 1.3rem;
     vertical-align: middle;
+    
+    
 }
 
-
+.main-nav__item__account {
+    animation: account 0.3s 2s 8 ;
+}
 .main-nav__item{
     margin: 0 1rem;
     display: flex;
 }
 .main-nav__item a {
-
+    color: white;
     text-decoration: none;
 }
 
@@ -82,6 +88,7 @@ main {
 .main-nav__item__account a:hover,
 .main-nav__item__account a:active {
     color: #1565c0;
+    transition: all 0.3s;
 }
 .main__footer {
     background: #424242;
@@ -123,4 +130,18 @@ main {
     height: 100vh;
     background: rgba(0, 0 , 0 , 0.5);
 
+}
+.open { 
+    display: block !important;
+    opacity: 1  !important;
+    transform: translateY(0)  !important;
+}
+
+@keyframes account {
+    from {
+        transform: rotateZ(0);
+    }
+    to {
+        transform: rotateZ(10deg);
+    }
 }

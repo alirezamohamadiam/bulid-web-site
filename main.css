@@ -1,3 +1,4 @@
+@import 'animate.compat.css';
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -24,10 +25,10 @@
   }
 }
 
+
 .section-title {
   color: #1565c0;
-  text-align: center;
-}
+  text-align: center;}
 
 .plan {
   width: 100%;
@@ -130,6 +131,9 @@
 
 .modal {
   position: fixed;
+  opacity: 0;
+  transform: translateY(-3rem);
+  transition: opacity 0.3s transform 0.5s ;
   display: none;
   z-index: 200;
   top: 20%;
@@ -153,10 +157,13 @@
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 3px;
+  text-decoration: none;
 }
 
 .modal__action--negative {
-  background: #d81b60;
+  background: #dd417a;
   border: 1px solid #d81b60;
+  text-decoration: none;
 }
+
 /*# sourceMappingURL=main.css.map */
